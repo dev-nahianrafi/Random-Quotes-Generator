@@ -20,6 +20,7 @@
 }
 .quotes{
     text-align: center;
+    position: relative;
 }
 .quotes_output{
     height: 400px;
@@ -30,10 +31,21 @@
     border: 2px solid #222;
     background-color: #64F58D;
     /* #BC8DA7 */
-    padding: 25px;
+    padding: 25px 60px 25px 25px;
     font-size: 25px;
     color: #222;
     font-family: "Caveat", cursive;
+}
+.classs {
+	font-size: 25px;
+	color: #222;
+	position: absolute;
+	right: 105px;
+	top: 34px;
+    cursor: pointer;
+}
+.classs:hover {
+	color: #fff;
 }
 .btn{
     display: flex;

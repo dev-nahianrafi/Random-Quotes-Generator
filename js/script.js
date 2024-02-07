@@ -1,4 +1,5 @@
 let results = document.querySelector(".quotes_output")
+let copy = document.querySelector(".classs")
 
 let btn = document.querySelector(".submit")
 let rest = document.querySelector(".reset")
@@ -84,6 +85,11 @@ btn.addEventListener("click", function(){
     // console.log(allquotes[randomnum].names);
     results.value = allquotes[randomnum].quotess
     // results.value = allquotes[randomnum].names
+})
+copy.addEventListener("click", function(){
+    results.select();
+    results.setSelectionRange(0, 99999); 
+    navigator.clipboard.writeText(results.value)
 })
 
 rest.addEventListener("click", function(){
